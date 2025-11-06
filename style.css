@@ -58,6 +58,42 @@ nav {
     border-bottom: 1px solid #D4D9E2;
 }
 
+nav .container {
+    position: relative;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -247,32 +283,55 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    /* Mobile Navigation Optimization */
+    /* Mobile Navigation with Hamburger */
     nav {
         padding: 10px 0;
     }
 
-    nav ul {
-        flex-direction: column;
+    nav .container {
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        background: #003366;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 0;
+    }
+
+    nav ul.active {
+        max-height: 400px;
     }
 
     nav ul li {
         margin: 0;
         width: 100%;
         text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
     }
 
     nav ul li a {
         display: block;
-        padding: 12px 20px;
+        padding: 15px 20px;
         font-size: 1.05rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    nav ul li:last-child a {
-        border-bottom: none;
     }
 
     nav ul li a:active {
