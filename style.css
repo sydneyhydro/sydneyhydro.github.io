@@ -8,7 +8,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #4B5563;
     background-color: #f4f4f4;
 }
 
@@ -20,30 +20,42 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-    color: white;
-    padding: 60px 0;
+    background: #FFFFFF;
+    color: #1F5FAB;
+    padding: 40px 0;
     text-align: center;
+    border-bottom: 2px solid #D4D9E2;
+}
+
+.header-logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #1F5FAB;
 }
 
 .tagline {
     font-size: 1.2rem;
-    opacity: 0.9;
+    color: #4B5563;
+    opacity: 1;
 }
 
 /* Navigation */
 nav {
-    background-color: #1e3a8a;
+    background: #2294ef;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #D4D9E2;
 }
 
 nav ul {
@@ -58,13 +70,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:active {
     opacity: 0.8;
 }
 
@@ -85,46 +98,168 @@ main {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1e3a8a;
+    color: #1F5FAB;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #1F5FAB;
 }
 
 .section p {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: #4B5563;
+}
+
+/* Event Details */
+.event-details {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #E5F2FF;
+    border: 1px solid #D4D9E2;
+    border-left: 4px solid #3C9DED;
+    border-radius: 4px;
+}
+
+.detail-item h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #1F5FAB;
+}
+
+.detail-item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+/* Key Dates */
+.key-dates {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.key-dates li {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: #E5F2FF;
+    border: 1px solid #D4D9E2;
+    border-left: 4px solid #3C9DED;
+    border-radius: 4px;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+/* Key Dates Table */
+.key-dates-table {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.key-dates-table thead {
+    background: #2294ef;
+    color: #FFFFFF;
+}
+
+.key-dates-table th {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.key-dates-table tbody tr {
+    border-bottom: 1px solid #D4D9E2;
+}
+
+.key-dates-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.key-dates-table tbody tr:nth-child(even) {
+    background: #F7FAFF;
+}
+
+.key-dates-table tbody tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+.key-dates-table td {
+    padding: 15px 20px;
+    color: #4B5563;
+    font-size: 1.05rem;
+}
+
+.key-dates-table td:first-child {
+    font-weight: 500;
+    color: #1F5FAB;
+}
+
+.key-dates-table td:last-child {
+    font-weight: 600;
 }
 
 /* Footer */
 footer {
-    background-color: #1e3a8a;
-    color: white;
+    background: #1F5FAB;
+    color: #FFFFFF;
     text-align: center;
     padding: 30px 0;
     margin-top: 0;
 }
 
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header-logo {
+        max-width: 210px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
-    
+
     .tagline {
         font-size: 1rem;
     }
-    
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     nav ul li {
         margin: 5px 0;
     }
-    
+
     .section {
         padding: 40px 0;
     }
-    
+
     .section h2 {
         font-size: 1.5rem;
     }

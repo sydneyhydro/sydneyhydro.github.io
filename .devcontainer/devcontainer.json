@@ -1,0 +1,25 @@
+{
+  "name": "Sydney Hydrology Website",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Website",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "echo 'Dev container ready! Run: python3 -m http.server 8080' && echo 'Or use: npx http-server -p 8080'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
