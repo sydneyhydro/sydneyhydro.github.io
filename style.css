@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
     background: #FFFFFF;
-    color: #1F5FAB;
+    color: #003366;
     padding: 40px 0;
     text-align: center;
     border-bottom: 2px solid #D4D9E2;
@@ -38,7 +38,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #1F5FAB;
+    color: #003366;
 }
 
 .tagline {
@@ -49,7 +49,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #2294ef;
+    background: #003366;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -98,14 +98,14 @@ main {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1F5FAB;
+    color: #003366;
 }
 
 .section h3 {
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 15px;
-    color: #1F5FAB;
+    color: #003366;
 }
 
 .section p {
@@ -128,14 +128,14 @@ main {
     padding: 20px;
     background: #E5F2FF;
     border: 1px solid #D4D9E2;
-    border-left: 4px solid #3C9DED;
+    border-left: 4px solid #003366;
     border-radius: 4px;
 }
 
 .detail-item h3 {
     margin-top: 0;
     font-size: 1.3rem;
-    color: #1F5FAB;
+    color: #003366;
 }
 
 .detail-item p {
@@ -156,7 +156,7 @@ main {
     margin-bottom: 10px;
     background: #E5F2FF;
     border: 1px solid #D4D9E2;
-    border-left: 4px solid #3C9DED;
+    border-left: 4px solid #003366;
     border-radius: 4px;
     line-height: 1.6;
     color: #4B5563;
@@ -172,7 +172,7 @@ main {
 }
 
 .key-dates-table thead {
-    background: #2294ef;
+    background: #003366;
     color: #FFFFFF;
 }
 
@@ -207,7 +207,7 @@ main {
 
 .key-dates-table td:first-child {
     font-weight: 500;
-    color: #1F5FAB;
+    color: #003366;
 }
 
 .key-dates-table td:last-child {
@@ -216,7 +216,7 @@ main {
 
 /* Footer */
 footer {
-    background: #1F5FAB;
+    background: #003366;
     color: #FFFFFF;
     text-align: center;
     padding: 30px 0;
