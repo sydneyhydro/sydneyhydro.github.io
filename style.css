@@ -150,6 +150,17 @@ main {
     color: #4B5563;
 }
 
+/* About highlights */
+.about-highlights {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.about-highlights li {
+    margin-bottom: 6px;
+}
+
 /* Event Details */
 .event-details {
     display: flex;
