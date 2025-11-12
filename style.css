@@ -264,7 +264,7 @@ main {
 /* Button Styles */
 a.btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 7px 14px;
     margin: 10px 10px 10px 0;
     font-size: 1.05rem;
     font-weight: 600;
