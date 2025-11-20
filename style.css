@@ -230,6 +230,11 @@ main {
     font-size: 1.1rem;
 }
 
+.key-dates-table th:first-child {
+    width: 150px;
+    white-space: nowrap;
+}
+
 .key-dates-table tbody tr {
     border-bottom: 1px solid #D4D9E2;
 }
@@ -255,6 +260,8 @@ main {
 .key-dates-table td:first-child {
     font-weight: 500;
     color: #003366;
+    width: 150px;
+    white-space: nowrap;
 }
 
 .key-dates-table td:last-child {
