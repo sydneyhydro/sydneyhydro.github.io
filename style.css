@@ -231,7 +231,7 @@ main {
 }
 
 .key-dates-table th:first-child {
-    width: 150px;
+    width: 120px;
     white-space: nowrap;
 }
 
@@ -260,7 +260,7 @@ main {
 .key-dates-table td:first-child {
     font-weight: 500;
     color: #003366;
-    width: 150px;
+    width: 120px;
     white-space: nowrap;
 }
 
