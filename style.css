@@ -268,6 +268,66 @@ main {
     font-weight: 600;
 }
 
+/* Program Table (extends key-dates-table) */
+table.program-table {
+    max-width: 80% !important;
+    width: 80%;
+}
+
+table.program-table th:first-child,
+table.program-table td:first-child {
+    width: 100px;
+}
+
+table.program-table th:nth-child(2),
+table.program-table td:nth-child(2) {
+    width: 60%;
+}
+
+table.program-table th:last-child,
+table.program-table td:last-child {
+    width: 30%;
+    font-weight: 500;
+}
+
+.program-table .session-header td {
+    background: #F0F4F8;
+    font-weight: 600;
+    color: #003366;
+}
+
+.program-table .session-header-alt td {
+    background: #E5F2FF;
+    font-weight: 600;
+    color: #003366;
+}
+
+.program-table .break-row td {
+    background: #F0F4F8;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Venue Layout */
+.venue-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.venue-text {
+    flex: 1;
+}
+
+/* Map Container */
+.map-container {
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 /* Button Styles */
 a.btn {
     display: inline-block;
@@ -419,5 +479,28 @@ footer a:hover {
 
     .key-dates-table td {
         font-size: 0.95rem;
+    }
+
+    table.program-table th:first-child,
+    table.program-table td:first-child {
+        width: 80px;
+    }
+
+    table.program-table th:nth-child(2),
+    table.program-table td:nth-child(2) {
+        width: auto;
+    }
+
+    table.program-table th:last-child,
+    table.program-table td:last-child {
+        width: auto;
+    }
+
+    .venue-content {
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
     }
 }
