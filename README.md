@@ -1,4 +1,4 @@
-# Sydney Hydrology Day 2026
+# Sydney Hydrology Day
 
 Official website for Sydney Hydrology Day — an annual one-day forum bringing together researchers and professionals across Sydney to share advances in hydrology and water science.
 The first Sydney Hydrology Day took place on 10 February 2026.
