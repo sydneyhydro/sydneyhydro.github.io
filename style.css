@@ -308,6 +308,53 @@ table.program-table td:last-child {
     font-weight: 600;
 }
 
+/* ── Collapsible program details ── */
+.program-details {
+    margin-top: 1rem;
+}
+
+.program-summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    border: 1.5px solid var(--primary, #2563eb);
+    color: var(--primary, #2563eb);
+    font-weight: 600;
+    font-size: 0.95rem;
+    background: transparent;
+    transition: background 0.18s, color 0.18s;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+.program-summary::-webkit-details-marker { display: none; }
+
+.program-summary:hover {
+    background: var(--primary, #2563eb);
+    color: #fff;
+}
+
+.summary-arrow {
+    display: inline-block;
+    transition: transform 0.25s ease;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+details[open] .summary-arrow {
+    transform: rotate(180deg);
+}
+
+details[open] .program-summary {
+    background: var(--primary, #2563eb);
+    color: #fff;
+}
+
+
 /* Venue Layout */
 .venue-content {
     display: flex;
