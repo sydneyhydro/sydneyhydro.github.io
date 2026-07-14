@@ -27,4 +27,23 @@ document.addEventListener('DOMContentLoaded', function () {
             navMenu.classList.remove('active');
         }
     });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
 });
+
+// Gallery lightbox
+function openLightbox(item) {
+    const src = item.querySelector('img').src;
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
