@@ -28,9 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Close lightbox with Escape key
+    // Close lightbox with Escape key; second Escape closes full gallery modal
     document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'Escape') {
+            if (document.getElementById('lightbox').classList.contains('active')) {
+                closeLightbox();
+            } else {
+                closeFullGallery();
+            }
+        }
     });
 });
 
@@ -45,5 +51,25 @@ function openLightbox(item) {
 
 function closeLightbox() {
     document.getElementById('lightbox').classList.remove('active');
+    // Restore scroll only if full gallery is also closed
+    if (!document.getElementById('full-gallery-modal').classList.contains('active')) {
+        document.body.style.overflow = '';
+    }
+}
+
+// Full gallery modal
+function openFullGallery() {
+    document.getElementById('full-gallery-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFullGallery() {
+    document.getElementById('full-gallery-modal').classList.remove('active');
     document.body.style.overflow = '';
+}
+
+function handleFullGalleryClick(event) {
+    if (event.target === document.getElementById('full-gallery-modal')) {
+        closeFullGallery();
+    }
 }

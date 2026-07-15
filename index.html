@@ -53,38 +53,39 @@
                     with areas of interest such as water quality, water quantity, ecohydrology, water ecology and water
                     management</p>
                 <br>
-                <p> The first ever Sydney Hydrology Day event took place on 10 February 2026.</p>
                 <p> The 2027 event will take place on <strong>9 February 2027</strong>.</p>
 
                 <h3 class="gallery-heading">Photos from SHD 2026</h3>
                 <p class="gallery-intro">A glimpse of the inaugural Sydney Hydrology Day held on 10 February 2026.</p>
                 <div class="gallery-grid">
+                    <!-- Hero: group photo -->
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/IMG_1535.jpeg" alt="SHD 2026 event photo 1" loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                        <img src="assets/images/shd2026/IMG_4497.jpg" alt="SHD 2026 group photo" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/IMG_1537.jpeg" alt="SHD 2026 event photo 2" loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                        <img src="assets/images/shd2026/IMG_1537.jpeg" alt="SHD 2026 session" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/IMG_1539.jpeg" alt="SHD 2026 event photo 3" loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                        <img src="assets/images/shd2026/IMG_4485.jpg" alt="SHD 2026 event" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/20260210_110453.jpg" alt="SHD 2026 event photo 4"
-                            loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                        <img src="assets/images/shd2026/IMG_4503.jpg" alt="SHD 2026 event" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/IMG-20260210-WA0008.jpg" alt="SHD 2026 event photo 5"
-                            loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                        <img src="assets/images/shd2026/EYXI4843.jpg" alt="SHD 2026 event" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
                     </div>
-                    <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="assets/images/shd2026/IMG-20260210-WA0009.jpg" alt="SHD 2026 event photo 6"
-                            loading="lazy">
-                        <div class="gallery-overlay"><span>🔍</span></div>
+                    <!-- Show More tile -->
+                    <div class="gallery-item gallery-show-more" onclick="openFullGallery()">
+                        <img src="assets/images/shd2026/IMG_4483.jpg" alt="" loading="lazy">
+                        <div class="gallery-show-more-overlay">
+                            <span class="show-more-count">+11</span>
+                            <span class="show-more-label">Show all photos</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,6 +307,82 @@
         <div id="lightbox" class="lightbox" onclick="closeLightbox()">
             <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
             <img id="lightbox-img" src="" alt="Enlarged event photo">
+        </div>
+
+        <!-- Full gallery modal -->
+        <div id="full-gallery-modal" class="full-gallery-modal" onclick="handleFullGalleryClick(event)">
+            <div class="full-gallery-content">
+                <div class="full-gallery-header">
+                    <h3>SHD 2026 &mdash; All Photos</h3>
+                    <button class="full-gallery-close" onclick="closeFullGallery()" aria-label="Close">&times;</button>
+                </div>
+                <div class="full-gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_4497.jpg" alt="SHD 2026 group photo" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_1535.jpeg" alt="SHD 2026 panel discussion" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_1537.jpeg" alt="SHD 2026 session" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_1539.jpeg" alt="SHD 2026 event" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/20260210_110453.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/CSXZ0476.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/EONP4747.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/EYXI4843.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/GJUA6132.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/HORO8528.JPG" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG-20260210-WA0008.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG-20260210-WA0009.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_4483.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_4485.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_4503.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="assets/images/shd2026/IMG_4499.jpg" alt="SHD 2026" loading="lazy">
+                        <div class="gallery-overlay"><span></span></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section id="registration" class="section">
